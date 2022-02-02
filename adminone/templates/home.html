@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        background-image:urls("Free Vector.jpg")
+        .d1{
+            background-color: rgba(216, 120, 29, 0.356);
+            height: 80px;
+            width: 100%;
+        }
+        .link{
+            margin-right: 100px;
+            padding-top: 20px;
+            float: right;
+            height: 10px;
+        }
+        img{
+            height: 80px;
+            width: 100px;
+        }
+        h1{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 55px;
+            font-style: oblique;
+            color: rgb(188, 240, 241);
+        }
+        .d2{
+            width: 100%;
+            height: 500px;
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    
+      <div class="d1">
+        <a href="#para"><img src="{% static 'images/con11.jpg' %}"  alt=""></a>
+        <a href="" class="link">Login</a>
+        <a href="" class="link">Contact Us</a>
+        <a href="" class="link">Services</a>
+        <a href="" class="link">About</a>
+        <a href="" class="link">Home</a>
+    </div>
+    <div class="d2">
+        <marquee behavior="" direction="">
+            <h1>
+                 <br>
+                make it smiple <br>
+                 <br>
+                 <br>
+            </h1>
+        </marquee>
+    </div>
+</body>
+</html>
