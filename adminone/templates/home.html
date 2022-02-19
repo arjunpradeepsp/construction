@@ -42,8 +42,8 @@
                 <a href="#para"><img src="{% static 'images/con11.jpg' %}" height="80px" width="100px"  alt=""></a>
             </div>
             <div class="col-4">
-                <button type="button" class="btn btn-outline-light col-md-4">Login</button>
-            </div>
+                <a href="{% url 'login' %}">  <button type="button" class="btn btn-outline-light col-md-4">Login</button>
+           </a> </div>
             <div class="col-4">
                 <button type="button" class="btn btn-outline-light col-md-4">Contact Us</button>
             </div>
@@ -51,7 +51,7 @@
                 <button type="button" class="btn btn-outline-light col-md-4">Services</button>
             </div>
             <div class="col-4">
-                <button type="button" class="btn btn-outline-light col-md-4">About</button>
+                <a href="{% url 'about' %}"> <button type="button" class="btn btn-outline-light col-md-4">About</button></a>
             </div>
             <div class="col-4">
                 <button type="button" class="btn btn-outline-light col-md-4">Home</button>
@@ -67,15 +67,7 @@
              <br>
             </h1>
         </marquee>
-        <marquee behavior="" style="nowrap" direction="left">
-            <h1>
-                <br>
-                construct your dream with us <br>
-                     <br>
-                 <br>
-                <br>
-            </h1>
-        </marquee>
+        
     </div>
 </body>
 </html>
