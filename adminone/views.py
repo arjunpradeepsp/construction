@@ -9,3 +9,6 @@ def fnFirst(request0):
     
 def fnLogin(request1):
     return render(request1,'login.html')
+
+def fnabout(request2):
+    return render(request2,'about.html')
