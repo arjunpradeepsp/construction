@@ -21,12 +21,13 @@ body
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
+    /* background-image: image("{% static 'images/con2.jpg' %}"); */
 }
 .loginbox{
     width: 320pxpx;
-    height: 420px;
-    background: #000;
-    color: #fff;
+    height: 520px;
+    background: #fff;
+    color: rgb(255, 77, 77);
     top: 1000px;
     top: 50%;
     left: 50%;
@@ -43,7 +44,7 @@ body
     height: 100px;
     border-radius: 50%;
     position: absolute;
-    top: -50px
+    top: -50px;
     left: calc(50%  - 50px);
    
 }
@@ -54,10 +55,15 @@ body
    font-size: 18px;
    
 }
+body{
+  background-image: linear-gradient(to right ,#df0926,white);
+
+}
 .loginbox p{
   margin: 0;
   padding: 0;
   font-weight: bold ;
+  background-image: linear-gradient(to right ,#df0926,white);
 
 }
 .loginbox input{
@@ -79,8 +85,7 @@ margin-bottom: 20px;
   border: none;
   outline: none;
   height: 40px;
-  background: #fb2525;
-  color: #fff;
+  background: crimson;
   font-size: 18px;
   border-radius: 2px;
   
@@ -95,11 +100,12 @@ margin-bottom: 20px;
   text-decoration: none;
   font-size: 12px;
   line-height: 20px;
-  color: rgb(49, 42, 150);
+  color:  #0805d3;
 }
 .loginbox a:hover{
-color: #ffc107;
+color: #3a0bbd;
 }
+
 </style>
 
 <body>
@@ -107,7 +113,7 @@ color: #ffc107;
    
     <h1>Login Here</h1>
     <form action="">
-      <p>UserName</p>
+      <p>User Name</p>
       <input type="text" name="" placeholder="Enter your name">
       <p>Password</p>
       <input type="password" name="" id="" placeholder="Enter your password">
@@ -116,7 +122,9 @@ color: #ffc107;
       </div>
       <a href="#">Lost your password</a> <br>
       <a href="#">Don't habe an account?</a>
-
+      <li class="nav-item">
+        <button type="home" class="btn btn-primary">Home</button>
+      </li>
     </form>
   </div>
 
