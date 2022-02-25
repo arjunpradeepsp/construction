@@ -9,5 +9,6 @@ urlpatterns=[
     path('contact',views.fncontact,name='contact'),
     path('offer',views.fnoffer,name='offer'),
     path('sign',views.fnsign,name='sign'),
-    path('path',views.fnmenu,name='menu')
+    path('path',views.fnmenu,name='menu'),
+    path('crt',views.fncrt,name='crt'),
 ]

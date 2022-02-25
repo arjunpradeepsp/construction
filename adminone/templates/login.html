@@ -24,7 +24,7 @@ body
     /* background-image: image("{% static 'images/con2.jpg' %}"); */
 }
 .loginbox{
-    width: 320pxpx;
+    width: 420px;
     height: 520px;
     background: #fff;
     color: rgb(255, 77, 77);
@@ -59,13 +59,13 @@ body{
   background-image: linear-gradient(to right ,#df0926,white);
 
 }
-.loginbox p{
+/* .loginbox p{
   margin: 0;
   padding: 0;
   font-weight: bold ;
   background-image: linear-gradient(to right ,#df0926,white);
 
-}
+} */
 .loginbox input{
 width: 100%;
 margin-bottom: 20px;
@@ -75,19 +75,19 @@ margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
-  outline: none;
+  /* outline: none; */
   height: 40px;
   color: #fff;
   font-size: 16px;
 }
 .loginbox input[type="submit"]
 {
-  border: none;
-  outline: none;
+  /* border: none;
+  outline: none; */
   height: 40px;
   background: crimson;
   font-size: 18px;
-  border-radius: 2px;
+  border-radius: 15px;
   
 }
 .loginbox input[type="submit"]:hover
@@ -105,6 +105,9 @@ margin-bottom: 20px;
 .loginbox a:hover{
 color: #3a0bbd;
 }
+form {
+  border-radius: 15px ;
+}
 
 </style>
 
@@ -112,20 +115,31 @@ color: #3a0bbd;
   <div class="loginbox">
    
     <h1>Login Here</h1>
-    <form action="">
-      <p>User Name</p>
-      <input type="text" name="" placeholder="Enter your name">
-      <p>Password</p>
-      <input type="password" name="" id="" placeholder="Enter your password">
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+    <form action="" style="border-radius: 15px;">
+      <div class="form-row">
+          <div class="col-lg-7">
+              <input type="text" placeholder="User Name" class="form-control my-4 p-2">
+          </div>
       </div>
-      <a href="#">Lost your password</a> <br>
-      <a href="#">Don't habe an account?</a>
-      <li class="nav-item">
-        <button type="home" class="btn btn-primary">Home</button>
-      </li>
-    </form>
+      
+      <div class="form-row">
+          <div class="col-lg-7">
+              <input type="password" placeholder="********" class="form-control my-4 p-2">
+          </div>
+      </div>
+      <center>
+        <div class="form-row">
+            <div class="col-lg-7">
+                <a href="{% url 'login' %}"><button type="button" class="btn1 mt-3 mb-5">Login</button></a>
+            </div>
+        </div>
+      </center>
+      <div class="form-row">
+        <div class="col-lg-7">
+            <p>Don't you have Account ?</p><a href="{% url 'crt' %}">Create Account</a>
+        </div>
+    </div>
+  </form>
   </div>
 
 </body>

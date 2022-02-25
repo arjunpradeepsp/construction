@@ -25,3 +25,5 @@ def fnsign(request5):
 
 def fnoffer(request6):
     return render(request6,'offer.html')
+def fncrt(request7):
+    return render(request7,'crt.html')
