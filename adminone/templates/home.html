@@ -10,90 +10,108 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <style>
-        .navbar{
-        width: 100%;
-        height: 15vh;
-        margin: auto;
-        display: flex;
-        align-items: center;
-    }
-    nav{
-        flex: 1;
-        padding-left: 60px;
-    }
-    nav ul li{
-        display: inline-block;
-        list-style: none;
-        margin: 0px 20px;
-    }
-    .nav1{
-        background-image: linear-gradient(to left ,#df0926,white);
-        height: 3.625rem;
-        padding-top: 10px;
-        
-    }
-    .a1{
-        color: #fff;
-    }
-    .a1:hover {
-        color: white;
-    }
-    #a1{
-        color: white;
-    }
-    #a1:hover {
-        color: black;
-    }
-    .log {
-        width: 25px;
-    }
-    .bg {
-      height: 500px;
-      width: 100%;
-      background-image: url("{% static 'images/bul.jpg' %}");
-      background-color: aquamarine;
-    }
-    h1{
-      padding-top: 80px;
-      
-    }
-    .btn {
-      width: 70px;
-      height: ;
-    }
-    </style>
-</head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  </head>
+
+
+
+</style>
 <body>
-    <div class="container-fluid">
-        <div class="navbar">
-            <nav class="nav1 navbar-expand-lg fixed-top">
-                <ul class="nav justify-content-end">
-                    
-                    <li class="nav-item">
-                      <a class="a1 nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                      <a class="a1 nav-link" href="{% url 'about' %}">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="a1 nav-link " href="{% url 'contact' %}">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="a1 nav-link " href="{% url 'login' %}">Sign in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " id="a1" href="{% url 'sign' %}">Book Now</a>
-                      </li>
-                  </ul>
-            </nav>
-        </div>
-        
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">MAKE YOUR DREAMS</a>
+      </div>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="#aboutus">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login">Login</a></li>
+      </ul>
     </div>
-    <div class="bg">
-      <center><h1>Construct Your Dreams with Us</h1></center>
-      <center><h6></h6></center>
+  </nav>
+  <div class="img">
+    <img src="{% static 'images/user.jpg' %}" alt="Picture">
+  </div>
+  <div class="center">
+    
+    <div class="sub_title">CONSTRUCT WITH US</div>
+    <div class="btns">
+      
+      <a href="offer"><button type="submit" >SHOPE HERE</button></a>
     </div>
+  </div>
+  <div class="footer">
+    <div class="col-md-6 col-lg-3 p-4">
+      <div id="aboutus" class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            We Offer The Solutions You Need To Make Your House a Fully Functional and Customized Home. Since 2021, we’ve helped countless local homeowners turn their dream home into reality. Expert Contractors. Best Reviews. Interior Designers. Services: Home Remodeling, Bathroom Remodel, Kitchen Remodel.
+          </p>
+          <div class="footer-social">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 p-4">
+      <div id="contact" class="footer-contact">
+          <h3>Get In Touch</h3>
+          <p><i class="fa fa-map-marker-alt"></i> 5th Floor, CAFIT Square, Hilite Business Park, Thondayad Bye-Pass Thondayad, Hilite City, Poovangal, Kozhikode, Kerala 673016</p>
+          <p><i class="fa fa-phone-alt"></i>+91 8156858859</p>
+          <p><i class="fa fa-envelope"></i>arjunpradeepsp.com</p>
+          <p><i class="far fa-clock"></i>Mon - Fri, 9AM - 10PM</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 p-4">
+      <div class="footer-links">
+          <h3>Useful Links</h3>
+          <a href="https://kseb.in">KSEB</a>
+          <a href="http://kwa.kerala.gov.in"> WATER CONNECTION</a>
+          <a href="https://townplanning.kerala.gov.in/">TOWN PLANING</a>
+          <a href="http://lsgkerala.gov.in/">MUNCIPAL RULES</a>
+          <a href="https://noc.fire.kerala.gov.in">NOC PORTAL | DEPARTMENT OF FIRE & RESCUE ...·</a>
+          <a href="https://keralapolice.gov.in/">KERALA POLICE</a>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 p-4">
+      <div class="footer-project">
+          <h3>Latest Projects</h3>
+          <a href=""><img src="{% static 'images/imag1.jpg' %}" alt="Image"></a>
+          <a href=""><img src="{% static 'images/imag2.jpg' %}" alt="Image"></a>
+          <a href=""><img src="{% static 'images/image3.jpg' %}" alt="Image"></a>
+          <a href=""><img src="{% static 'images/building.jpg' %}" alt="Image"></a>
+          <a href=""><img src="{% static 'images/wrk.jpg' %}" alt="Image"></a>
+          <a href=""><img src="{% static 'images/bul.jpg' %}" alt="Image"></a>
+      </div>
+    </div>
+    <!-- <div class="container footer-newsletter">
+      <p>
+         COMMUNICATE WITH US ,KEEP CONTACT WITH US
+      </p>
+      <div class="row form">
+          <div class="col-sm-4">
+              <input class="form-control" placeholder="Your Name">
+          </div>
+          <div class="col-sm-4">
+              <input class="form-control" placeholder="Your Email">
+          </div>
+          <div class="col-sm-4">
+              <button class="btn">Subscribe</button>
+          </div>
+      </div>
+      
+    </div> -->
+    
+    
+    </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">E-Construction</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">E-Contruction</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="home">HOME</a></li>
+              <li>
+                <a href="#">MATERIALS</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="const">Construction</a></li>
+                  <li><a href="plumb">Plumping</a></li>
+                  <li><a href="electrc">Electrical</a></li>
+                  <li class="more">
+                    <span><a href="#">More</a>
+                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                  </span>
+                    <ul class="more-sub-menu sub-menu">
+                      <li><a href="#">Paint</a></li>
+                      <li><a href="#">Workers</a></li>
+                      <li><a href="#">Interior Designers</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">OFFERS</a>
+                <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            </ul>
+          </div>
+          <div class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </div>
+      </nav>
+    <setion id="category">
+        <center><h1>PLUMBING MATERIALS</h1></center>
+        <ul>
+            <li>
+                <div class="back">
+                    <img src="{% static 'images/taps2.jpg'' %}" alt="Pic">
+                    <div class="tag">
+                        <a href="#">TAPS</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="back">
+                    <img src="{% static 'images/wpipe.jpg'' %}" alt="Pic">
+                    <div class="tag">
+                        <a href="#">PVCs</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="back">
+                    <img src="{% static 'images/bathtub.jpg'' %}" alt="Pic">
+                    <div class="tag">
+                        <a href="#">SANITARY</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+      </setion>
+</body>
+</html>
